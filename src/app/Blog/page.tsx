@@ -10,7 +10,7 @@ const index = () => {
   return (
     <div className='container mx-auto '>
       
-          <div className="relative  flex size-full mx-auto max-w-7xl items-center justify-center overflow-hidden rounded-lg  bg-background  pb-36 pt-8  ">
+          <div className="relative  flex size-full mx-auto max-w-7xl  items-center justify-center overflow-hidden rounded-lg  bg-background  pb-36 pt-8  ">
                 <span className="pointer-events-none  bg-black bg-clip-text text-center md:text-5xl text-3xl font-semibold  text-transparent dark:from-white dark:to-slate-900/10 ">
                 BLOGS
                 </span>

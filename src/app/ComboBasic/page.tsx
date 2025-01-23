@@ -85,7 +85,7 @@ const page = () => {
 
             <p className="md:text-3xl text-xl font-semibold py-5">$ 1500</p>
           </div>
-          <Buttons name="Buy Now" />
+          <Buttons href="/Payment" name="Buy Now" />
         </div>
         <div className="shadow-lg border rounded-lg md:py-5 md:px-10 p-5 bg-green-50">
           <div>
@@ -99,7 +99,7 @@ const page = () => {
 
             <p className="md:text-3xl text-xl font-semibold py-5">$ 2600</p>
           </div>
-          <Buttons name="Buy Now" />
+          <Buttons href="/Payment" name="Buy Now" />
         </div>
         <div className="shadow-lg border rounded-lg md:py-5 md:px-10 p-5 bg-green-50 ">
           <div>
@@ -112,7 +112,7 @@ const page = () => {
             </TextAnimate>
             <p className="md:text-3xl text-xl font-semibold py-5">$ 4500</p>
           </div>
-          <Buttons name="Buy Now" />
+          <Buttons href="/Payment" name="Buy Now" />
         </div>
         <div></div>
         <div></div>

@@ -23,6 +23,7 @@ const ImgMediaCard: React.FC<ImgMediaCardProps> = (props) => {
         padding: "16px", // Add padding to the card
         boxShadow: 3, // Optional: add a shadow for a better visual effect
         borderRadius: "8px", // Optional: rounded corners
+        
       }}
     >
       <CardMedia
@@ -52,7 +53,6 @@ const ImgMediaCard: React.FC<ImgMediaCardProps> = (props) => {
             textOverflow: "ellipsis", // Optionally adds an ellipsis if text overflows
             wordWrap: 'break-word', 
             WebkitLineClamp: 2,  // Limit to 3 lines (optional)
-           
             display: '-webkit-box',
             WebkitBoxOrient: 'vertical',
            

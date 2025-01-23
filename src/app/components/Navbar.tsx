@@ -62,7 +62,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-green-700 shadow-md z-[1000] container mx-auto">
+    <nav className="bg-green-700 shadow-md  z-[1000] container mx-auto">
       <div className="container mx-auto px-4 flex items-center justify-evenly py-3">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -90,13 +90,13 @@ const Navbar = () => {
         >
           <Link
             href="/"
-            className="block text-white font-semibold hover:bg-green-500 hover:rounded-full py-2 px-4 hover:transition-all duration-300"
+            className="block text-white font-semibold  w-fit  hover:bg-green-500 hover:rounded-full py-2 px-4 hover:transition-all duration-300"
           >
             Home
           </Link>
           <Link
             href="/AboutUs"
-            className="block text-white font-semibold hover:bg-green-500 hover:rounded-full py-2 px-4 hover:transition-all duration-300"
+            className="block text-white font-semibold  w-fit  hover:bg-green-500 hover:rounded-full py-2 px-4 hover:transition-all duration-300"
           >
             About Us
           </Link>
@@ -215,19 +215,19 @@ const Navbar = () => {
 
           <Link
             href="/ContactUS"
-            className="block text-white font-semibold hover:bg-green-500 hover:rounded-full py-2 px-4 hover:transition-all duration-300"
+            className="block text-white font-semibold  w-fit  hover:bg-green-500 hover:rounded-full py-2 px-4 hover:transition-all duration-300"
           >
             Contact Us
           </Link>
           <Link
             href="/Blog"
-            className="block text-white font-semibold hover:bg-green-500 hover:rounded-full py-2 px-4 hover:transition-all duration-300"
+            className="block text-white font-semibold  w-fit  hover:bg-green-500 hover:rounded-full py-2 px-4 hover:transition-all duration-300"
           >
             Blogs
           </Link>
-          <button className="block bg-white text-green-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-200">
+          <Link href={"/Payment"} className="block bg-white text-green-600 px-4 py-2 rounded-full w-fit font-semibold hover:bg-gray-200">
             Payment
-          </button>
+          </Link>
         </div>
       </div>
     </nav>
