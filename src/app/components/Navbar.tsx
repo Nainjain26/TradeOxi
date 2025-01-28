@@ -123,7 +123,7 @@ const Navbar = () => {
                     Forex Plan <FaChevronDown />
                   </button>
                   {dropdowns.forex && (
-                    <div className="absolute left-full top-0 bg-green-500 shadow-md rounded-md mt-0 ml-2 w-48">
+                    <div className="absolute left-full top-0 bg-green-500 shadow-md rounded-md mt-0 ml-2 w-40">
                       <Link
                         href="/Basicforex"
                         className="block px-4 py-2 text-white hover:bg-green-600"

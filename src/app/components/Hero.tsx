@@ -42,8 +42,8 @@ const Hero = () => {
               </div>
             </div>
 
-            <div>
-              <img src="/hero2.svg" alt="" />
+            <div className="sm:mt-0 mt-7">
+              <img src="/mainmockup.svg" alt="" className="md:h-[600px] md:w-[600px] h-[300px] w-[300px]" />
             </div>
           </div>
         </p>
