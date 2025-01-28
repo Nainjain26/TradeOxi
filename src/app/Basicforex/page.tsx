@@ -65,7 +65,7 @@ const page = () => {
             <span className="text-2xl text-green-600 border rounded-full mr-3">
               <HiArrowSmRight />
             </span>
-            The Risk-to-Reward ratio is 1:1.5.
+            The Risk-to-Reward ratio is 1:1
           </p>
           <p className=" flex items-center">
             <span className="text-2xl text-green-600 border rounded-full mr-3">

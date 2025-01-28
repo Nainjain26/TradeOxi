@@ -8,7 +8,7 @@ import { TextAnimate } from "@/components/ui/text-animate";
 const features = [
     "There will be daily 2-4 Signals.",
 "Satisfied accuracy level on a monthly basis.",
-"In this service, the Risk and reward Ratio is 1:2.",
+"In this service, the Risk and reward Ratio is 1:1",
 "All Recommendations will be provided with Two Targets and One Stop-Loss.",
 "Support and resistance of all major traded metals per day.",
 "Complete follow-ups on recommendation and open positions.",

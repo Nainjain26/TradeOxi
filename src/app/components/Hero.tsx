@@ -12,9 +12,8 @@ const Hero = () => {
           <div className="md:grid grid-cols-2 gap-5 ">
             <div className="flex flex-col justify-center">
               <h1 className="md:text-5xl text-2xl font-semibold leading-tight">
-                
-                Don&apos;t Just Trade - Succeed with
-                <span className="text-green-700">TRADEOXI</span>
+                Fuel Your Trading Journey With
+                <span className="text-green-700">TRADEOXI</span> Power
               </h1>
 
               <TextAnimate
@@ -29,15 +28,17 @@ const Hero = () => {
               <TextAnimate
                 animation="blurInUp"
                 by="character"
-               className="text-gray-800  md:text-xl font-medium"
+                className="text-gray-800  md:text-xl font-medium"
               >
-               Join TRADEOXI today and take the first step toward financial
-               independence and trading success.
+                Join TRADEOXI today and take the first step toward financial
+                independence and trading success.
               </TextAnimate>
 
-              
               <div className="pt-4">
-                <Buttons name={"Create Account "} href="/" />
+                <Buttons
+                  name={"Create Account "}
+                  href="https://my.roboforex.com/en/register/?_gl=1*1yiez6o*_gcl_au*MTk1OTkyNDYyMy4xNzM3MDE3Mzk5*FPAU*MTk1OTkyNDYyMy4xNzM3MDE3Mzk5*_ga*MTQxOTgyNDA3LjE3MzcwMTc0MDA.*_ga_KD23DCYKJK*MTczNzYzNTQzOC4xMC4wLjE3Mzc2MzU0MzguMC4wLjcwMjAwMTkzOQ..*_fplc*JTJGMHBGRGhJek10ZVJDOEJTMHEyckpEOUZhU0tSOXBnTTJIWWROdFNyOW9SN3J3a0U5N2RIWFEzc1QxaklaajIzZGp1azN5b3BvNHd5VUJvWUFGJTJCTWp3dXVVNVdIOHpwTVlEViUyRnZPSGpDckFUYTZYM3hZU1NnWmU3T0JNZlRBJTNEJTNE"
+                />
               </div>
             </div>
 

@@ -45,21 +45,10 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
         <Typography gutterBottom variant="h4" component="div">
           {props.title}
         </Typography>
-        <Typography
-          variant="body1"
-          color="text.secondary"
-          sx={{
-            whiteSpace: 'normal', // Allow text to break into multiple lines
-            overflow: 'hidden',   // Hide overflowed text
-            wordWrap: 'break-word', // Ensure long words break and wrap
-            textOverflow: 'ellipsis', // Optional: Add ellipsis for overflowed text
-            display: '-webkit-box',
-            WebkitBoxOrient: 'vertical',
-           
-          }}
-        >
-          {props.description}
-        </Typography>
+        <div
+        className="post-description"
+        dangerouslySetInnerHTML={{ __html: props.description }} // Render HTML content
+      />
       </CardContent>
     </Card>
   );

@@ -41,7 +41,7 @@ const Download = () => {
         </div>
 
         <div>
-          <img src="/mockup3.svg" alt="" className='w-[800px]' />
+          <img src="/mockup.svg" alt="" className='md:w-[800px] md:h-[600px] h-[300px] w-[400px]' />
         </div>
       </div>
     </div>

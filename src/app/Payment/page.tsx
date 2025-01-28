@@ -18,22 +18,22 @@ const page = () => {
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto py-10   ">
         <div>
-          <Link href={"/"}>
+          <Link href={""}>
             <img src="/Mastercard.png" alt="" />
           </Link>
         </div>
         <div>
-          <Link href={"/"}>
+          <Link href={""}>
             <img src="/PayPal.png" alt="" />
           </Link>
         </div>
         <div>
-          <Link href={"/"}>
+          <Link href={""}>
             <img src="/Skrill.png" alt="" />
           </Link>
         </div>
         <div>
-          <Link href={"/"}>
+          <Link href={""}>
             <img src="/Stripe.png" alt="" />
           </Link>
         </div>
@@ -42,7 +42,7 @@ const page = () => {
       <div className="max-w-7xl mx-auto md:py-20  py-5 ">
         <div className="text-center md:py-10 py-20">
           <h1 className="md:text-5xl font-semibold text-2xl">
-            Do not hesitate to{" "}
+            Do not hesitate to 
             <span className="text-green-700">reach out.</span>
           </h1>
           <p className="text-gray-600 pt-3">

@@ -8,7 +8,7 @@ import { TextAnimate } from "@/components/ui/text-animate";
 const features = [
    " There will be daily 2-4 Signals.",
     "A high level of accuracy on a monthly basis.",
-    "The Risk-to-Reward Ratio is 1:2.",
+    "The Risk-to-Reward Ratio is 1:1.5",
    " All recommendations are based on technical analysis",
     "Support and resistance levels for all major currencies and traded metals are provided daily.",
    " Updates on all major events and data impacting the Forex and Comex markets.",

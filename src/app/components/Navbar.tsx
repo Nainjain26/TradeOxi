@@ -62,11 +62,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-green-700 shadow-md  z-[1000] container mx-auto">
+    <nav className="bg-green-800 shadow-md  z-[1000] container mx-auto">
       <div className="container mx-auto px-4 flex items-center justify-evenly py-3">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          {/* <img src="/logo.png" alt="Logo" className="h-10 w-auto" /> */}
+          <img src="/logo2.svg" alt="Logo" className="h-14 w-auto" />
           <div>
             <h1 className="md:text-4xl text-2xl font-bold text-white">
               TRADEOXI
@@ -113,7 +113,7 @@ const Navbar = () => {
               dropdowns.forex ||
               dropdowns.comex ||
               dropdowns.combo) && (
-              <div className="absolute bg-green-500 shadow-md rounded-md mt-2 w-48">
+              <div className="absolute bg-green-500 shadow-md rounded-md mt-2 w-40">
                 {/* Forex Plan */}
                 <div className="relative">
                   <button
@@ -155,7 +155,7 @@ const Navbar = () => {
                     Comex Plan <FaChevronDown />
                   </button>
                   {dropdowns.comex && (
-                    <div className="absolute left-full top-0 bg-green-500 shadow-md rounded-md mt-0 ml-2 w-48">
+                    <div className="absolute left-full top-0 bg-green-500 shadow-md rounded-md mt-0 ml-2 w-40">
                       <Link
                         href="/BasicComex"
                         className="block px-4 py-2 text-white hover:bg-green-600"
@@ -187,7 +187,7 @@ const Navbar = () => {
                     Combo Plan <FaChevronDown />
                   </button>
                   {dropdowns.combo && (
-                    <div className="absolute left-full top-0 bg-green-500 shadow-md rounded-md mt-0 ml-2 w-48">
+                    <div className="absolute left-full top-0 bg-green-500 shadow-md rounded-md mt-0 ml-2 w-40">
                       <Link
                         href="/ComboBasic"
                         className="block px-4 py-2 text-white hover:bg-green-600"

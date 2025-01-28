@@ -6,8 +6,8 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: '',
-    phone: '', 
+    comment: '',
+    phoneNumber: '', 
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -15,10 +15,29 @@ export default function ContactForm() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert(`Form submitted: \n Name: ${formData.name} \n Email: ${formData.email} \n Message: ${formData.message} \n Phone: ${formData.phone}`);
-    // You can add your form submission logic here (e.g., sending to an API or email)
+    const response = await fetch('https://adminbackend-iypc.onrender.com/feedback', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json', // Specify JSON content type
+      },
+      body: JSON.stringify(formData), // Convert to JSON string
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to submit the form');
+    }
+
+    const result = await response.json();
+    alert(`Form submitted successfully: ${result.message}`);
+    setFormData({
+    name: '',
+    email: '',
+    comment: '',
+    phoneNumber: '', 
+    });
+    
   };
 
   return (
@@ -50,25 +69,25 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Your Phone Number</label>
+          <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">Your phone number</label>
           <input
             type="text"
-            id="phone"
-            name="phone"
-            value={formData.phone}
+            id="phoneNumber"
+            name="phoneNumber"
+            value={formData.phoneNumber}
             onChange={handleInputChange}
             required
-            min="1000000000" // Example for minimum phone number length
-            max="9999999999" // Example for maximum phone number length
+            min="1000000000" // Example for minimum phoneNumber number length
+            max="9999999999" // Example for maximum phoneNumber number length
             className="mt-2 w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 appearance-none" // Added appearance-none to remove the spinner
           />
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700">Your Message</label>
+          <label htmlFor="comment" className="block text-sm font-medium text-gray-700">Your message</label>
           <textarea
-            id="message"
-            name="message"
-            value={formData.message}
+            id="comment"
+            name="comment"
+            value={formData.comment}
             onChange={handleInputChange}
             required
             rows={4}

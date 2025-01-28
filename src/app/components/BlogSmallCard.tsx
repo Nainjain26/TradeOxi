@@ -44,22 +44,21 @@ const ImgMediaCard: React.FC<ImgMediaCardProps> = (props) => {
         <Typography gutterBottom variant="h5" component="div">
           {props.title}
         </Typography>
-        <Typography
-          variant="body2"
-          sx={{
-            color: "text.secondary",
-            whiteSpace: "normal", // Ensures text wraps as expected
-            overflow: "hidden", // Prevents any overflowing content
-            textOverflow: "ellipsis", // Optionally adds an ellipsis if text overflows
-            wordWrap: 'break-word', 
-            WebkitLineClamp: 2,  // Limit to 3 lines (optional)
-            display: '-webkit-box',
-            WebkitBoxOrient: 'vertical',
-           
-          }}
-        >
-          {props.description}
-        </Typography>
+        <div
+        className="post-description"
+        style={{
+          color: "text.secondary",
+          whiteSpace: "normal", // Ensures text wraps as expected
+          overflow: "hidden", // Prevents any overflowing content
+          textOverflow: "ellipsis", // Optionally adds an ellipsis if text overflows
+          wordWrap: 'break-word', 
+          WebkitLineClamp: 2,  // Limit to 3 lines (optional)
+          display: '-webkit-box',
+          WebkitBoxOrient: 'vertical',
+         
+        }}
+        dangerouslySetInnerHTML={{ __html: props.description }} // Render HTML content
+      />
       </CardContent>
       <CardActions>
         <Link

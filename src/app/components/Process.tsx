@@ -12,7 +12,7 @@ const Process = () => {
         </p>
         <TextAnimate animation="blurInUp" by="character"   className="text-center md:text-5xl font-semibold text-2xl mt-3 md:mb-14 mb-7 ">
         How It Works
-            </TextAnimate>
+         </TextAnimate>
 
       </div>
       <div className="md:grid grid-cols-2 gap-10  max-w-7xl mx-auto px-3">
@@ -40,8 +40,17 @@ const Process = () => {
           />
         </div>
         {/* right */}
-        <div>
-          <img src="/f3.jpg" alt="" className="md:w-[450px] md:h-[450px] object-cover rounded-2xl " />
+        <div className=" flex justify-center ">
+        <video
+            src="/mobilev.mp4"
+            autoPlay
+            loop
+            muted
+            className="w-full md:h-[430px] h-auto object-cover rounded-lg mt-5 sm:mt-0 "
+          >
+            Your browser does not support the video tag.
+          </video>
+          {/* <img src="/f3.jpg" alt="" className="md:w-[450px] md:h-[450px] object-cover rounded-2xl " /> */}
         </div>
       </div>
     </div>
