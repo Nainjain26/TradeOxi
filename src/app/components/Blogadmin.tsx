@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { Editor, EditorState, RichUtils, convertToRaw, Modifier } from "draft-js";
+import { Editor, EditorState, RichUtils, convertToRaw } from "draft-js";
 import draftToHtml from "draftjs-to-html";
 import "draft-js/dist/Draft.css";
 
@@ -57,17 +57,17 @@ export default function Blogadmin() {
 
 
   // Insert Image (by URL or File Upload)
-  const insertImage = (url: string) => {
-    const contentState = editorState.getCurrentContent();
-    const contentStateWithEntity = contentState.createEntity('IMAGE', 'IMMUTABLE', { src: url });
-    const entityKey = contentStateWithEntity.getLastCreatedEntityKey();
-    const newContentState = Modifier.insertText(contentState, editorState.getSelection(), ' ', null, entityKey);
-    const newEditorState = EditorState.push(editorState, newContentState, 'insert-characters');
-    setEditorState(newEditorState);
-  };
+  // const insertImage = (url: string) => {
+  //   const contentState = editorState.getCurrentContent();
+  //   const contentStateWithEntity = contentState.createEntity('IMAGE', 'IMMUTABLE', { src: url });
+  //   const entityKey = contentStateWithEntity.getLastCreatedEntityKey();
+  //   const newContentState = Modifier.insertText(contentState, editorState.getSelection(), ' ', null, entityKey);
+  //   const newEditorState = EditorState.push(editorState, newContentState, 'insert-characters');
+  //   setEditorState(newEditorState);
+  // };
 
   // Handle block format (Heading 1, Heading 2, etc.)
-  
+
   // const handleBlockFormat = (style: string) => {
   //   const newState = RichUtils.toggleBlockType(editorState, style);
   //   setEditorState(newState);

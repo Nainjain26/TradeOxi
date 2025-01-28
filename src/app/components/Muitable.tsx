@@ -36,13 +36,13 @@ const columns: readonly Column[] = [
   
 ];
 
-interface Data {
-  name: string;
-  email: string;
-  phoneNumber: number;
-  comment: number;
+// interface Data {
+//   name: string;
+//   email: string;
+//   phoneNumber: number;
+//   comment: number;
   
-}
+// }
 
 // function createData(
 //   name: string,
