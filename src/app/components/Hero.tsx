@@ -13,7 +13,7 @@ const Hero = () => {
             <div className="flex flex-col justify-center">
               <h1 className="md:text-5xl text-2xl font-semibold leading-tight">
                 Fuel Your Trading Journey With
-                <span className="text-green-700">TRADEOXI</span> Power
+                <span className="text-green-600">TRADEOXI</span> Power
               </h1>
 
               <TextAnimate

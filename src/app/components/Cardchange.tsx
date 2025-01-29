@@ -18,8 +18,8 @@ const Cardchange: React.FC<CardchangeProps> = (props) => {
         </div>
 
         {/* Card Background */}
-        <span className="absolute top-0 left-0 w-1/2 h-full bg-green-700 rounded-l-lg transition-all duration-1000 ease-in-out group-hover:w-0 group-hover:rounded-none"></span>
-        <span className="absolute top-0 right-0 w-1/2 h-full bg-green-700 rounded-r-lg transition-all duration-1000 ease-in-out group-hover:w-0 group-hover:rounded-none"></span>
+        <span className="absolute top-0 left-0 w-1/2 h-full bg-green-600 rounded-l-lg transition-all duration-1000 ease-in-out group-hover:w-0 group-hover:rounded-none"></span>
+        <span className="absolute top-0 right-0 w-1/2 h-full bg-green-600 rounded-r-lg transition-all duration-1000 ease-in-out group-hover:w-0 group-hover:rounded-none"></span>
        </div>
     </div>
   )

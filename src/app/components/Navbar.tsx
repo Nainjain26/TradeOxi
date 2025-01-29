@@ -62,7 +62,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-green-800 shadow-md  z-[1000] container mx-auto">
+    <nav className="bg-green-600 shadow-md  z-[1000] container mx-auto">
       <div className="container mx-auto px-4 flex items-center justify-evenly py-3">
         {/* Logo */}
         <div className="flex items-center space-x-2">

@@ -26,7 +26,7 @@ const options = {
 
 const Footer = () => {
   return (
-    <div className="bg-green-800 container mx-auto  md:py-10 py-5 px-3">
+    <div className="bg-green-600 container mx-auto  md:py-10 py-5 px-3">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-5 max-w-7xl mx-auto">
         {/* first */}
         <div className="">
