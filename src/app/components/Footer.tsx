@@ -14,7 +14,7 @@ export const data = [
   ["Country", "Popularity"],
 
   ["United States", 600],
-   ["Canada", 200],
+  ["Canada", 200],
   ["America", 300],
   ["India", 700],
 ];
@@ -37,44 +37,58 @@ const Footer = () => {
             <p className="p-2 shadow-xl bg-green-200 mr-3 text-green-700 rounded-full md:text-xl">
               <IoCall />
             </p>
-            <p className="text-white md:text-xl  ">+91 123-456-789</p>
+            <p className="text-white md:text-xl  ">+44 7411 532008</p>
           </div>
           <div className="flex pt-2 ">
             <p className="p-2 shadow-xl bg-green-200 mr-3 text-green-700 rounded-full md:text-xl">
               <IoIosMailUnread />
             </p>
-            <p className="text-white md:text-xl  ">tradeoxi@gmail.com</p>
+            <p className="text-white md:text-xl  ">support@tradeoxi.com</p>
           </div>
         </div>
 
         {/* add */}
         <div>
-        <TextAnimate
+          <TextAnimate
             animation="blurInUp"
             by="character"
             className="md:text-3xl text-2xl font-semibold text-white"
           >
-           Quick Links
+            Quick Links
           </TextAnimate>
           <div className="flex pt-5 ">
             <p className="p-2  mr-2 text-white  md:text-xl">
-              < FaAngleRight />
+              <FaAngleRight />
             </p>
-            <Link href={"/Privacy-policy"} className="text-white md:text-xl hover:text-green-200 ">privacy-policy</Link>
+            <Link
+              href={"/Privacy-policy"}
+              className="text-white md:text-xl hover:text-green-200 "
+            >
+              privacy-policy
+            </Link>
           </div>
           <div className="flex pt-3 ">
             <p className="p-2  mr-2 text-white  md:text-xl">
-              < FaAngleRight />
+              <FaAngleRight />
             </p>
-            <Link href={"/Refund-policy"} className="text-white md:text-xl hover:text-green-200 ">Refund-policy</Link>
+            <Link
+              href={"/Refund-policy"}
+              className="text-white md:text-xl hover:text-green-200 "
+            >
+              Refund-policy
+            </Link>
           </div>
           <div className="flex pt-3 ">
             <p className="p-2  mr-2 text-white  md:text-xl">
-              < FaAngleRight />
+              <FaAngleRight />
             </p>
-            <Link href={"/Terms-conditions"} className="text-white md:text-xl hover:text-green-200 ">Terms & conditions</Link>
+            <Link
+              href={"/Terms-conditions"}
+              className="text-white md:text-xl hover:text-green-200 "
+            >
+              Terms & conditions
+            </Link>
           </div>
-
         </div>
         {/* second */}
         <div>

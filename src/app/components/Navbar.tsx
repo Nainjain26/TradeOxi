@@ -66,10 +66,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-evenly py-3">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src="/logo2.svg" alt="Logo" className="h-14 w-auto" />
+          <img src="/logo3.svg" alt="Logo" className="h-12 w-auto" />
           <div>
             <h1 className="md:text-4xl text-2xl font-bold text-white">
-              TRADEOXI
+              TradeOxi
             </h1>
           </div>
         </div>
