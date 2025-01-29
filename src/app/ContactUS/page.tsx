@@ -64,13 +64,13 @@ const page = () => {
     {
       icon: <IoMdMailUnread />,
       title: "Email Address",
-      description: "tradeoxi@gmail.com",
+      description: "support@tradeoxi.com",
       color: "from-purple-400 to-purple-600",
     },
     {
       icon: <FaLocationDot />,
       title: "Phone Number",
-      description: "+91 123-789-4556",
+      description: "+44 7411532008",
       color: "from-orange-400 to-orange-600",
     },
   ].map((item, index) => (
