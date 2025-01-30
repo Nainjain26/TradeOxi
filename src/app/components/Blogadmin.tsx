@@ -192,13 +192,13 @@ export default function Blogadmin() {
             >
               Underline
             </button>
-            <button
+            {/* <button
               type="button"
               onClick={() => handleFormat("STRIKETHROUGH")}
               className="px-4 py-2 bg-gray-200 text-black rounded-lg hover:bg-gray-300"
             >
               Strikethrough
-            </button>
+            </button> */}
           </div>
 
           {/* Draft.js Editor */}

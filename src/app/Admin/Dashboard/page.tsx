@@ -19,7 +19,7 @@ export default function LabTabs() {
   };
 
   return (
-    <div className='max-w-7xl mx-auto md:my-20 my-5'>
+    <div className='max-w-7xl mx-auto md:my-20 my-5 container '>
     <Box sx={{ width: '100%', typography: 'body1' }}>
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
