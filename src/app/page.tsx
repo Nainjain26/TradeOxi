@@ -1,5 +1,6 @@
 "use client"
 // import Image from "next/image";
+import { useEffect, useState } from "react";
 import Numbers from "./components/Numbers";
 import Accounts from "./components/Accounts";
 import Accrodions from "./components/Accrodions";
@@ -9,9 +10,28 @@ import Process from "./components/Process";
 import Testimonals from "./components/Testimonals";
 import Download from "./components/Download";
 import Hero from "./components/Hero";
-import { useEffect } from "react";
+
+import PopupForm from "./components/ContactFormModal";
+// import ContactFormModal from "./components/ContactFormModal";
 
 export default function Home() {
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  // Check sessionStorage and show popup if it hasn’t been seen this session
+  useEffect(() => {
+    const hasSeenPopup = sessionStorage.getItem("hasSeenPopup");
+    if (!hasSeenPopup) {
+      setShowPopup(true);
+    }
+  }, []);
+
+  // Handle popup close and mark it as seen in sessionStorage
+  const handleClosePopup = () => {
+    setShowPopup(false);
+    sessionStorage.setItem("hasSeenPopup", "true");
+  };
+
   useEffect(() => {
       const fetchBlogs = async () => {
         try {
@@ -31,7 +51,7 @@ export default function Home() {
     }, []);
   return (
 <div>
-    <Hero/>
+  <Hero/>
     <Accrodions/>
      <Accounts/>
     <Numbers/>
@@ -39,7 +59,7 @@ export default function Home() {
     <Process/>
     <Testimonals/>
     <Cryptopage/>
-   
+    {showPopup && <PopupForm onClose={handleClosePopup} />}
 </div>
   );
 }
