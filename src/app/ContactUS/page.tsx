@@ -58,19 +58,19 @@ const page = () => {
     {
       icon: <MdAddLocationAlt />,
       title: "UK Address",
-      description: "Omega Tower, Indore",
+      description: "Omega Tower",
       color: "from-blue-400 to-blue-600",
     },
     {
       icon: <IoMdMailUnread />,
       title: "Email Address",
-      description: "support@tradeoxi.com",
+      description: "Support@tradeoxi.com",
       color: "from-purple-400 to-purple-600",
     },
     {
       icon: <FaLocationDot />,
       title: "Phone Number",
-      description: "+44 7411532008",
+      description: "+447411532008",
       color: "from-orange-400 to-orange-600",
     },
   ].map((item, index) => (

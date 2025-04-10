@@ -71,13 +71,13 @@ const page = () => {
               <p className="p-2 shadow-xl bg-green-200 mr-3 text-green-700 rounded-full md:text-xl">
                 <IoCall />
               </p>
-              <p className=" md:text-xl  ">+91 123-456-789</p>
+              <p className=" md:text-xl  ">+447411532008</p>
             </div>
             <div className="flex pt-5 text-gray-600 ">
               <p className="p-2 shadow-xl bg-green-200 mr-3 text-green-700 rounded-full md:text-xl">
                 <IoIosMailUnread />
               </p>
-              <p className=" md:text-xl  ">tradeoxi@gmail.com</p>
+              <p className=" md:text-xl  ">Support@tradeoxi.com</p>
             </div>
           </div>
         </div>
