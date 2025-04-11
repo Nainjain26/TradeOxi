@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "TradeOxi",
-  description: "Tradeoxi empowers stock market enthusiasts with trading strategies, market insights, analytics, and tools for smarter investment decisions globally.",
+  description: "Tradeoxi empowers stock market enthusiasts with trading strategies, market insights, analytics, and tools for smarter investment decisions globally.It includes features like :- Forex Trading ,Investment Advisor, Forex signals, gold signals ,risk Management , forex trading , investment advisor, Currency Trading , currency trading , trading platform , stock market account , forex exchange, Gold Signals , Risk Management, forex signals , Forex Exchange",
   //   icons: {
   //   icon: '/favicon.ico',
   // },
